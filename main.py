@@ -14,8 +14,8 @@ def PSNR(original, converted):
 
 # Import picture & create RGB,HSI and YCbCr copies using algorithm
 img = cv2.imread('mandrill.ppm', 1)
-hsi =  cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
-ycrcb = cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
+hsi =  cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+ycrcb = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
 
 cv2.imwrite('rgb.png', img)
 cv2.imwrite('hsi.png', hsi)
