@@ -45,8 +45,8 @@ cv2.imshow('Cb Channel', ycrcb[:, :, 2])
 HSIvalue = PSNR(img, hsi)
 print(f"PSNR value between RGB and HSI is {HSIvalue} dB")
 
-YCbCrvalue = PSNR(img, ycrcb)
-print(f"PSNR value between RGB and YCbCr is {YCbCrvalue} dB")
+YCrCbvalue = PSNR(img, ycrcb)
+print(f"PSNR value between RGB and YrbCb is {YCrCbvalue} dB")
 
 
 # Wait for a key press and then terminate the program
